@@ -9,12 +9,13 @@
 /* Begin PBXBuildFile section */
 		6DFBE6821AA7B10E00C85A65 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DFBE6811AA7B10E00C85A65 /* main.m */; };
 		6DFBE6851AA7B10E00C85A65 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DFBE6841AA7B10E00C85A65 /* AppDelegate.m */; };
-		6DFBE6881AA7B10E00C85A65 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DFBE6871AA7B10E00C85A65 /* MasterViewController.m */; };
-		6DFBE68B1AA7B10E00C85A65 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DFBE68A1AA7B10E00C85A65 /* DetailViewController.m */; };
 		6DFBE68E1AA7B10E00C85A65 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DFBE68C1AA7B10E00C85A65 /* Main.storyboard */; };
 		6DFBE6901AA7B10E00C85A65 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DFBE68F1AA7B10E00C85A65 /* Images.xcassets */; };
 		6DFBE6931AA7B10E00C85A65 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DFBE6911AA7B10E00C85A65 /* LaunchScreen.xib */; };
 		6DFBE69F1AA7B10F00C85A65 /* randomWordTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DFBE69E1AA7B10F00C85A65 /* randomWordTests.m */; };
+		6DFBE6AA1AA7B13500C85A65 /* wordsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DFBE6A91AA7B13500C85A65 /* wordsManager.m */; };
+		6DFBE6AD1AA7BCED00C85A65 /* WordTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DFBE6AC1AA7BCED00C85A65 /* WordTableViewCell.m */; };
+		6DFBE6B01AA7C0C800C85A65 /* AllWordsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DFBE6AF1AA7C0C800C85A65 /* AllWordsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,16 +34,18 @@
 		6DFBE6811AA7B10E00C85A65 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6DFBE6831AA7B10E00C85A65 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6DFBE6841AA7B10E00C85A65 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		6DFBE6861AA7B10E00C85A65 /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
-		6DFBE6871AA7B10E00C85A65 /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
-		6DFBE6891AA7B10E00C85A65 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
-		6DFBE68A1AA7B10E00C85A65 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		6DFBE68D1AA7B10E00C85A65 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6DFBE68F1AA7B10E00C85A65 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		6DFBE6921AA7B10E00C85A65 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		6DFBE6981AA7B10F00C85A65 /* randomWordTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = randomWordTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DFBE69D1AA7B10F00C85A65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6DFBE69E1AA7B10F00C85A65 /* randomWordTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = randomWordTests.m; sourceTree = "<group>"; };
+		6DFBE6A81AA7B13500C85A65 /* wordsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wordsManager.h; sourceTree = "<group>"; };
+		6DFBE6A91AA7B13500C85A65 /* wordsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = wordsManager.m; sourceTree = "<group>"; };
+		6DFBE6AB1AA7BCED00C85A65 /* WordTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WordTableViewCell.h; sourceTree = "<group>"; };
+		6DFBE6AC1AA7BCED00C85A65 /* WordTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WordTableViewCell.m; sourceTree = "<group>"; };
+		6DFBE6AE1AA7C0C800C85A65 /* AllWordsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AllWordsViewController.h; sourceTree = "<group>"; };
+		6DFBE6AF1AA7C0C800C85A65 /* AllWordsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AllWordsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,14 +89,16 @@
 			children = (
 				6DFBE6831AA7B10E00C85A65 /* AppDelegate.h */,
 				6DFBE6841AA7B10E00C85A65 /* AppDelegate.m */,
-				6DFBE6861AA7B10E00C85A65 /* MasterViewController.h */,
-				6DFBE6871AA7B10E00C85A65 /* MasterViewController.m */,
-				6DFBE6891AA7B10E00C85A65 /* DetailViewController.h */,
-				6DFBE68A1AA7B10E00C85A65 /* DetailViewController.m */,
 				6DFBE68C1AA7B10E00C85A65 /* Main.storyboard */,
 				6DFBE68F1AA7B10E00C85A65 /* Images.xcassets */,
 				6DFBE6911AA7B10E00C85A65 /* LaunchScreen.xib */,
 				6DFBE67F1AA7B10E00C85A65 /* Supporting Files */,
+				6DFBE6A81AA7B13500C85A65 /* wordsManager.h */,
+				6DFBE6A91AA7B13500C85A65 /* wordsManager.m */,
+				6DFBE6AB1AA7BCED00C85A65 /* WordTableViewCell.h */,
+				6DFBE6AC1AA7BCED00C85A65 /* WordTableViewCell.m */,
+				6DFBE6AE1AA7C0C800C85A65 /* AllWordsViewController.h */,
+				6DFBE6AF1AA7C0C800C85A65 /* AllWordsViewController.m */,
 			);
 			path = randomWord;
 			sourceTree = "<group>";
@@ -224,10 +229,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6DFBE6AA1AA7B13500C85A65 /* wordsManager.m in Sources */,
+				6DFBE6AD1AA7BCED00C85A65 /* WordTableViewCell.m in Sources */,
+				6DFBE6B01AA7C0C800C85A65 /* AllWordsViewController.m in Sources */,
 				6DFBE6851AA7B10E00C85A65 /* AppDelegate.m in Sources */,
-				6DFBE6881AA7B10E00C85A65 /* MasterViewController.m in Sources */,
 				6DFBE6821AA7B10E00C85A65 /* main.m in Sources */,
-				6DFBE68B1AA7B10E00C85A65 /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
