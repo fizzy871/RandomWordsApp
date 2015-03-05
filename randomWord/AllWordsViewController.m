@@ -14,6 +14,7 @@
 @property (nonatomic, weak) IBOutlet UITableView *tableView;
 @property (nonatomic, weak) IBOutlet UITextField *textField;
 @property (nonatomic, strong) NSArray *words;
+@property (nonatomic, strong) UITapGestureRecognizer *cancelTapGesture;
 @end
 
 @implementation AllWordsViewController
@@ -22,6 +23,13 @@
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillHide:) name:UIKeyboardWillHideNotification object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillShow:) name:UIKeyboardWillShowNotification object:nil];
     self.words = [[wordsManager sharedInstance] allWords];
+}
+#pragma mark - getters/setters
+-(UITapGestureRecognizer *)cancelTapGesture{
+    if (!_cancelTapGesture){
+        _cancelTapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(cancel:)];
+    }
+    return _cancelTapGesture;
 }
 #pragma mark - keyboard appearance
 -(void)keyboardWillHide:(NSNotification*)notification{
@@ -42,10 +50,6 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
-    if (!cell){
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
-        cell.selectionStyle = UITableViewCellSelectionStyleNone;
-    }
     cell.textLabel.text = self.words[indexPath.row];
     return cell;
 }
@@ -66,8 +70,20 @@
         [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
     }
 }
-
+#pragma mark - actions
+-(IBAction)cancel:(id)sender{
+    self.textField.text = @"";
+    [self.textField resignFirstResponder];
+}
 #pragma mark - textfield
+- (void)textFieldDidBeginEditing:(UITextField *)textField
+{
+    [self.view addGestureRecognizer:self.cancelTapGesture];
+}
+- (void)textFieldDidEndEditing:(UITextField *)textField
+{
+    [self.view removeGestureRecognizer:self.cancelTapGesture];
+}
 - (BOOL)textFieldShouldReturn:(UITextField *)textField
 {
     if (![textField.text isEqualToString:@""]){

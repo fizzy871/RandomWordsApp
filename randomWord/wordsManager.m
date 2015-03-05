@@ -72,6 +72,9 @@
 }
 -(NSString*)randomWordExceptWords:(NSArray*)exceptWords{
     NSArray *words = [self wordsArrayExceptWords:exceptWords];
+    if (!words.count){
+        return nil;
+    }
     return words[arc4random() % [words count]];
 }
 -(NSArray*)wordsArrayExceptWords:(NSArray*)exceptWords{

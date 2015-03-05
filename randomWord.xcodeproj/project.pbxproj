@@ -16,6 +16,7 @@
 		6DFBE6AA1AA7B13500C85A65 /* wordsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DFBE6A91AA7B13500C85A65 /* wordsManager.m */; };
 		6DFBE6AD1AA7BCED00C85A65 /* WordTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DFBE6AC1AA7BCED00C85A65 /* WordTableViewCell.m */; };
 		6DFBE6B01AA7C0C800C85A65 /* AllWordsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DFBE6AF1AA7C0C800C85A65 /* AllWordsViewController.m */; };
+		6DFBE6B31AA7D3A900C85A65 /* RandomWordsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DFBE6B21AA7D3A900C85A65 /* RandomWordsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,8 @@
 		6DFBE6AC1AA7BCED00C85A65 /* WordTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WordTableViewCell.m; sourceTree = "<group>"; };
 		6DFBE6AE1AA7C0C800C85A65 /* AllWordsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AllWordsViewController.h; sourceTree = "<group>"; };
 		6DFBE6AF1AA7C0C800C85A65 /* AllWordsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AllWordsViewController.m; sourceTree = "<group>"; };
+		6DFBE6B11AA7D3A900C85A65 /* RandomWordsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RandomWordsViewController.h; sourceTree = "<group>"; };
+		6DFBE6B21AA7D3A900C85A65 /* RandomWordsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RandomWordsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +102,8 @@
 				6DFBE6AC1AA7BCED00C85A65 /* WordTableViewCell.m */,
 				6DFBE6AE1AA7C0C800C85A65 /* AllWordsViewController.h */,
 				6DFBE6AF1AA7C0C800C85A65 /* AllWordsViewController.m */,
+				6DFBE6B11AA7D3A900C85A65 /* RandomWordsViewController.h */,
+				6DFBE6B21AA7D3A900C85A65 /* RandomWordsViewController.m */,
 			);
 			path = randomWord;
 			sourceTree = "<group>";
@@ -232,6 +237,7 @@
 				6DFBE6AA1AA7B13500C85A65 /* wordsManager.m in Sources */,
 				6DFBE6AD1AA7BCED00C85A65 /* WordTableViewCell.m in Sources */,
 				6DFBE6B01AA7C0C800C85A65 /* AllWordsViewController.m in Sources */,
+				6DFBE6B31AA7D3A900C85A65 /* RandomWordsViewController.m in Sources */,
 				6DFBE6851AA7B10E00C85A65 /* AppDelegate.m in Sources */,
 				6DFBE6821AA7B10E00C85A65 /* main.m in Sources */,
 			);
@@ -426,6 +432,7 @@
 				6DFBE6A41AA7B10F00C85A65 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6DFBE6A51AA7B10F00C85A65 /* Build configuration list for PBXNativeTarget "randomWordTests" */ = {
 			isa = XCConfigurationList;
@@ -434,6 +441,7 @@
 				6DFBE6A71AA7B10F00C85A65 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

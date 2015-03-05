@@ -1,5 +1,5 @@
 //
-//  WordTableViewCell.h
+//  RandomWordsViewController.h
 //  randomWord
 //
 //  Created by Алексей Саечников on 05.03.15.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface WordTableViewCell : UITableViewCell
-@property (nonatomic,strong) IBOutlet UILabel *wordLabel;
+@interface RandomWordsViewController : UIViewController
+
 @end
