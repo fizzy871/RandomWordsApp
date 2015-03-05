@@ -30,7 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		6DFBE67C1AA7B10E00C85A65 /* randomWord.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = randomWord.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6DFBE67C1AA7B10E00C85A65 /* randomWords.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = randomWords.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DFBE6801AA7B10E00C85A65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6DFBE6811AA7B10E00C85A65 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6DFBE6831AA7B10E00C85A65 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -81,7 +81,7 @@
 		6DFBE67D1AA7B10E00C85A65 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6DFBE67C1AA7B10E00C85A65 /* randomWord.app */,
+				6DFBE67C1AA7B10E00C85A65 /* randomWords.app */,
 				6DFBE6981AA7B10F00C85A65 /* randomWordTests.xctest */,
 			);
 			name = Products;
@@ -137,9 +137,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		6DFBE67B1AA7B10E00C85A65 /* randomWord */ = {
+		6DFBE67B1AA7B10E00C85A65 /* randomWords */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6DFBE6A21AA7B10F00C85A65 /* Build configuration list for PBXNativeTarget "randomWord" */;
+			buildConfigurationList = 6DFBE6A21AA7B10F00C85A65 /* Build configuration list for PBXNativeTarget "randomWords" */;
 			buildPhases = (
 				6DFBE6781AA7B10E00C85A65 /* Sources */,
 				6DFBE6791AA7B10E00C85A65 /* Frameworks */,
@@ -149,9 +149,9 @@
 			);
 			dependencies = (
 			);
-			name = randomWord;
+			name = randomWords;
 			productName = randomWord;
-			productReference = 6DFBE67C1AA7B10E00C85A65 /* randomWord.app */;
+			productReference = 6DFBE67C1AA7B10E00C85A65 /* randomWords.app */;
 			productType = "com.apple.product-type.application";
 		};
 		6DFBE6971AA7B10F00C85A65 /* randomWordTests */ = {
@@ -204,7 +204,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6DFBE67B1AA7B10E00C85A65 /* randomWord */,
+				6DFBE67B1AA7B10E00C85A65 /* randomWords */,
 				6DFBE6971AA7B10F00C85A65 /* randomWordTests */,
 			);
 		};
@@ -257,7 +257,7 @@
 /* Begin PBXTargetDependency section */
 		6DFBE69A1AA7B10F00C85A65 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 6DFBE67B1AA7B10E00C85A65 /* randomWord */;
+			target = 6DFBE67B1AA7B10E00C85A65 /* randomWords */;
 			targetProxy = 6DFBE6991AA7B10F00C85A65 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -364,8 +364,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = randomWord/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -375,8 +377,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = randomWord/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -428,7 +432,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6DFBE6A21AA7B10F00C85A65 /* Build configuration list for PBXNativeTarget "randomWord" */ = {
+		6DFBE6A21AA7B10F00C85A65 /* Build configuration list for PBXNativeTarget "randomWords" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6DFBE6A31AA7B10F00C85A65 /* Debug */,
