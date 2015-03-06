@@ -19,7 +19,7 @@
 
 @implementation RandomWordsViewController
 -(void)updateConsts{
-    self.tableViewHeightConstraint.constant = 68*self.words.count;
+    self.tableViewHeightConstraint.constant = 68*self.words.count+100;
     [self.view setNeedsUpdateConstraints];
     self.placeholderTextLabel.hidden = self.words.count;
     [self.view updateConstraintsIfNeeded];

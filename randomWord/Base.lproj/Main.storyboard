@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="gxP-Go-R3y">
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--Navigation Controller-->
@@ -14,7 +16,7 @@
                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="barTintColor" red="0.92156862750000001" green="0.41568627450000001" blue="0.41568627450000001" alpha="1" colorSpace="calibratedRGB"/>
                         <textAttributes key="titleTextAttributes">
-                            <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="19"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </textAttributes>
                     </navigationBar>
@@ -42,13 +44,14 @@
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
                                 <subviews>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="67" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Efe-2U-uRD">
-                                        <rect key="frame" x="0.0" y="0.0" width="600" height="436"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="height" priority="750" constant="436" id="l48-Mg-z6R"/>
                                         </constraints>
                                         <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                        <view key="tableFooterView" contentMode="scaleToFill" id="rCZ-7A-Umt">
+                                        <view key="tableFooterView" contentMode="scaleToFill" id="ZhR-hZ-a1s">
+                                            <rect key="frame" x="0.0" y="90" width="600" height="100"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </view>
@@ -86,57 +89,66 @@
                                             <outlet property="delegate" destination="cPV-4a-Qoe" id="eQA-Lv-Xqc"/>
                                         </connections>
                                     </tableView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R9V-8S-SSV">
-                                        <rect key="frame" x="220" y="456" width="60" height="60"/>
-                                        <state key="normal" image="delete">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="removeAll:" destination="cPV-4a-Qoe" eventType="touchUpInside" id="LcT-fc-WGU"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3zs-bv-Drn">
-                                        <rect key="frame" x="320" y="456" width="60" height="60"/>
-                                        <state key="normal" image="add">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="addWord:" destination="cPV-4a-Qoe" eventType="touchUpInside" id="NRH-vR-sBd"/>
-                                        </connections>
-                                    </button>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="R9V-8S-SSV" secondAttribute="bottom" constant="20" id="1XU-I9-sjh"/>
                                     <constraint firstItem="Efe-2U-uRD" firstAttribute="leading" secondItem="zNI-GZ-V9w" secondAttribute="leading" id="I15-La-03x"/>
                                     <constraint firstItem="Efe-2U-uRD" firstAttribute="top" secondItem="zNI-GZ-V9w" secondAttribute="top" id="JC7-6v-Tb3"/>
                                     <constraint firstAttribute="trailing" secondItem="Efe-2U-uRD" secondAttribute="trailing" id="JbC-NY-5J4"/>
-                                    <constraint firstAttribute="height" relation="lessThanOrEqual" secondItem="Efe-2U-uRD" secondAttribute="height" constant="100" id="Pus-ja-wCu"/>
-                                    <constraint firstAttribute="bottom" secondItem="Efe-2U-uRD" secondAttribute="bottom" constant="100" id="Z73-B0-cMM"/>
-                                    <constraint firstAttribute="centerX" secondItem="R9V-8S-SSV" secondAttribute="centerX" constant="50" id="ipj-aC-ikg"/>
-                                    <constraint firstAttribute="centerX" secondItem="3zs-bv-Drn" secondAttribute="centerX" constant="-50" id="mKF-Sa-T66"/>
-                                    <constraint firstAttribute="bottom" secondItem="3zs-bv-Drn" secondAttribute="bottom" constant="20" id="zZT-lE-BRs"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" secondItem="Efe-2U-uRD" secondAttribute="height" id="Pus-ja-wCu"/>
+                                    <constraint firstAttribute="bottom" secondItem="Efe-2U-uRD" secondAttribute="bottom" id="Z73-B0-cMM"/>
                                 </constraints>
                             </scrollView>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Нажми &quot;+&quot; чтобы  добавить случайное слово или добавь новые слова  в список в разделе &quot;Ab&quot;" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y4M-z7-nkT">
-                                <rect key="frame" x="167" y="80" width="266" height="96"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <rect key="frame" x="176" y="80" width="249" height="96"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R9V-8S-SSV" userLabel="clear">
+                                <rect key="frame" x="204" y="454" width="62" height="62"/>
+                                <state key="normal" image="delete">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected" image="deleteSelected"/>
+                                <state key="highlighted" image="deleteSelected"/>
+                                <connections>
+                                    <action selector="removeAll:" destination="cPV-4a-Qoe" eventType="touchUpInside" id="LcT-fc-WGU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3zs-bv-Drn" userLabel="add">
+                                <rect key="frame" x="334" y="454" width="62" height="62"/>
+                                <state key="normal" image="add">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected" image="addSelected"/>
+                                <state key="highlighted" image="addSelected"/>
+                                <connections>
+                                    <action selector="addWord:" destination="cPV-4a-Qoe" eventType="touchUpInside" id="NRH-vR-sBd"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="zNI-GZ-V9w" firstAttribute="leading" secondItem="P4g-5h-GLX" secondAttribute="leading" id="4Qu-SB-iLT"/>
                             <constraint firstAttribute="centerX" secondItem="Y4M-z7-nkT" secondAttribute="centerX" id="Fhg-Su-bGI"/>
+                            <constraint firstItem="Ke1-pn-RSF" firstAttribute="top" secondItem="R9V-8S-SSV" secondAttribute="bottom" constant="20" id="H2Y-n4-Sfk"/>
                             <constraint firstItem="Y4M-z7-nkT" firstAttribute="top" secondItem="UlQ-FI-9I2" secondAttribute="bottom" constant="80" id="Koy-xQ-Bug"/>
+                            <constraint firstAttribute="centerX" secondItem="3zs-bv-Drn" secondAttribute="centerX" constant="-65" id="L2m-Vm-jG5"/>
                             <constraint firstItem="Ke1-pn-RSF" firstAttribute="top" secondItem="zNI-GZ-V9w" secondAttribute="bottom" id="MOt-8M-c7U"/>
                             <constraint firstAttribute="width" secondItem="Efe-2U-uRD" secondAttribute="width" id="asV-Rb-3kt"/>
                             <constraint firstItem="zNI-GZ-V9w" firstAttribute="top" secondItem="UlQ-FI-9I2" secondAttribute="bottom" id="eKc-qY-7O5"/>
                             <constraint firstAttribute="trailing" secondItem="zNI-GZ-V9w" secondAttribute="trailing" id="gb2-pS-sYK"/>
+                            <constraint firstAttribute="centerX" secondItem="R9V-8S-SSV" secondAttribute="centerX" constant="65" id="uUr-Ac-34d"/>
+                            <constraint firstItem="Ke1-pn-RSF" firstAttribute="top" secondItem="3zs-bv-Drn" secondAttribute="bottom" constant="20" id="xdY-eT-QV1"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="случайные слова" id="rdC-9d-Pyg">
-                        <barButtonItem key="rightBarButtonItem" image="words" id="qLh-KQ-Bm6">
+                        <barButtonItem key="leftBarButtonItem" image="infoButton" id="L12-BN-3VY" userLabel="info">
+                            <connections>
+                                <segue destination="zHa-Aw-vzV" kind="push" id="idP-1j-ybg"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" image="words" id="qLh-KQ-Bm6" userLabel="all words">
                             <connections>
                                 <segue destination="kI9-im-vcV" kind="push" id="Kvs-ZJ-UZ3"/>
                             </connections>
@@ -151,6 +163,50 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jET-up-BP2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="680" y="-173"/>
+        </scene>
+        <!--О программе-->
+        <scene sceneID="s9r-US-1fW">
+            <objects>
+                <viewController id="zHa-Aw-vzV" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Fgc-6h-fCt"/>
+                        <viewControllerLayoutGuide type="bottom" id="nfa-cb-tmp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="LvJ-sZ-WIo">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DAg-xC-96c">
+                                <rect key="frame" x="75" y="476" width="450" height="45"/>
+                                <color key="backgroundColor" red="0.92156862750000001" green="0.41568627450000001" blue="0.41568627450000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="qDy-iR-BFX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <state key="normal" title="Отправить отзыв">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="DAg-xC-96c" secondAttribute="centerX" id="cbl-Az-WuE"/>
+                            <constraint firstItem="DAg-xC-96c" firstAttribute="width" secondItem="LvJ-sZ-WIo" secondAttribute="width" multiplier="3:4" id="fxA-yd-928"/>
+                            <constraint firstItem="nfa-cb-tmp" firstAttribute="top" secondItem="DAg-xC-96c" secondAttribute="bottom" constant="15" id="re8-k7-8lq"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="О программе" id="wqM-Z2-ZHk"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="M8V-ay-Xse" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="680" y="527"/>
         </scene>
         <!--все слова-->
         <scene sceneID="yQj-EN-7MB">
@@ -227,8 +283,11 @@
         </scene>
     </scenes>
     <resources>
-        <image name="add" width="60" height="60"/>
-        <image name="delete" width="60" height="60"/>
-        <image name="words" width="32" height="20"/>
+        <image name="add" width="62" height="62"/>
+        <image name="addSelected" width="62" height="62"/>
+        <image name="delete" width="62" height="62"/>
+        <image name="deleteSelected" width="62" height="62"/>
+        <image name="infoButton" width="28" height="28"/>
+        <image name="words" width="28" height="19"/>
     </resources>
 </document>

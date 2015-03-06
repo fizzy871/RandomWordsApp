@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "6DFBE67B1AA7B10E00C85A65"
-               BuildableName = "randomWord.app"
-               BlueprintName = "randomWord"
+               BuildableName = "randomWords.app"
+               BlueprintName = "randomWords"
                ReferencedContainer = "container:randomWord.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -57,8 +57,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "6DFBE67B1AA7B10E00C85A65"
-            BuildableName = "randomWord.app"
-            BlueprintName = "randomWord"
+            BuildableName = "randomWords.app"
+            BlueprintName = "randomWords"
             ReferencedContainer = "container:randomWord.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -76,8 +76,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "6DFBE67B1AA7B10E00C85A65"
-            BuildableName = "randomWord.app"
-            BlueprintName = "randomWord"
+            BuildableName = "randomWords.app"
+            BlueprintName = "randomWords"
             ReferencedContainer = "container:randomWord.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -94,8 +94,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "6DFBE67B1AA7B10E00C85A65"
-            BuildableName = "randomWord.app"
-            BlueprintName = "randomWord"
+            BuildableName = "randomWords.app"
+            BlueprintName = "randomWords"
             ReferencedContainer = "container:randomWord.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
