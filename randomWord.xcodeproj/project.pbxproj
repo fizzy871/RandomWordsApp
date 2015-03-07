@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6D8C2FCF1AAA635100A87EED /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D8C2FCE1AAA635100A87EED /* AboutViewController.m */; };
+		6D8C2FD11AAA639B00A87EED /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D8C2FD01AAA639B00A87EED /* MessageUI.framework */; };
 		6DFBE6821AA7B10E00C85A65 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DFBE6811AA7B10E00C85A65 /* main.m */; };
 		6DFBE6851AA7B10E00C85A65 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DFBE6841AA7B10E00C85A65 /* AppDelegate.m */; };
 		6DFBE68E1AA7B10E00C85A65 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DFBE68C1AA7B10E00C85A65 /* Main.storyboard */; };
@@ -30,6 +32,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6D8C2FCD1AAA635100A87EED /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
+		6D8C2FCE1AAA635100A87EED /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
+		6D8C2FD01AAA639B00A87EED /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		6DFBE67C1AA7B10E00C85A65 /* randomWords.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = randomWords.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DFBE6801AA7B10E00C85A65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6DFBE6811AA7B10E00C85A65 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -56,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D8C2FD11AAA639B00A87EED /* MessageUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +78,7 @@
 		6DFBE6731AA7B10E00C85A65 = {
 			isa = PBXGroup;
 			children = (
+				6D8C2FD01AAA639B00A87EED /* MessageUI.framework */,
 				6DFBE67E1AA7B10E00C85A65 /* randomWord */,
 				6DFBE69B1AA7B10F00C85A65 /* randomWordTests */,
 				6DFBE67D1AA7B10E00C85A65 /* Products */,
@@ -104,6 +111,8 @@
 				6DFBE6AF1AA7C0C800C85A65 /* AllWordsViewController.m */,
 				6DFBE6B11AA7D3A900C85A65 /* RandomWordsViewController.h */,
 				6DFBE6B21AA7D3A900C85A65 /* RandomWordsViewController.m */,
+				6D8C2FCD1AAA635100A87EED /* AboutViewController.h */,
+				6D8C2FCE1AAA635100A87EED /* AboutViewController.m */,
 			);
 			path = randomWord;
 			sourceTree = "<group>";
@@ -238,6 +247,7 @@
 				6DFBE6AA1AA7B13500C85A65 /* wordsManager.m in Sources */,
 				6DFBE6AD1AA7BCED00C85A65 /* WordTableViewCell.m in Sources */,
 				6DFBE6B01AA7C0C800C85A65 /* AllWordsViewController.m in Sources */,
+				6D8C2FCF1AAA635100A87EED /* AboutViewController.m in Sources */,
 				6DFBE6B31AA7D3A900C85A65 /* RandomWordsViewController.m in Sources */,
 				6DFBE6851AA7B10E00C85A65 /* AppDelegate.m in Sources */,
 				6DFBE6821AA7B10E00C85A65 /* main.m in Sources */,

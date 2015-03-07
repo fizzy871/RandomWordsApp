@@ -167,7 +167,7 @@
         <!--О программе-->
         <scene sceneID="s9r-US-1fW">
             <objects>
-                <viewController id="zHa-Aw-vzV" sceneMemberID="viewController">
+                <viewController id="zHa-Aw-vzV" customClass="AboutViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Fgc-6h-fCt"/>
                         <viewControllerLayoutGuide type="bottom" id="nfa-cb-tmp"/>
@@ -193,16 +193,36 @@
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="sendFeedBack:" destination="zHa-Aw-vzV" eventType="touchUpInside" id="Ah9-9k-uxW"/>
+                                </connections>
                             </button>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Oy-NU-Ibt">
+                                <rect key="frame" x="10" y="0.0" width="580" height="461"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </webView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="AQR-Rj-XwT">
+                                <rect key="frame" x="290" y="208" width="20" height="20"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="DAg-xC-96c" firstAttribute="top" secondItem="2Oy-NU-Ibt" secondAttribute="bottom" constant="15" id="ADx-aP-n82"/>
+                            <constraint firstAttribute="centerY" secondItem="AQR-Rj-XwT" secondAttribute="centerY" constant="50" id="C7S-eF-kSg"/>
+                            <constraint firstAttribute="trailing" secondItem="2Oy-NU-Ibt" secondAttribute="trailing" constant="10" id="Vv9-ae-Yfd"/>
+                            <constraint firstItem="2Oy-NU-Ibt" firstAttribute="top" secondItem="Fgc-6h-fCt" secondAttribute="bottom" id="XDw-cu-2c2"/>
                             <constraint firstAttribute="centerX" secondItem="DAg-xC-96c" secondAttribute="centerX" id="cbl-Az-WuE"/>
                             <constraint firstItem="DAg-xC-96c" firstAttribute="width" secondItem="LvJ-sZ-WIo" secondAttribute="width" multiplier="3:4" id="fxA-yd-928"/>
+                            <constraint firstAttribute="centerX" secondItem="AQR-Rj-XwT" secondAttribute="centerX" id="gWG-Ar-dvb"/>
+                            <constraint firstItem="2Oy-NU-Ibt" firstAttribute="leading" secondItem="LvJ-sZ-WIo" secondAttribute="leading" constant="10" id="o43-Ny-Qbf"/>
                             <constraint firstItem="nfa-cb-tmp" firstAttribute="top" secondItem="DAg-xC-96c" secondAttribute="bottom" constant="15" id="re8-k7-8lq"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="О программе" id="wqM-Z2-ZHk"/>
+                    <connections>
+                        <outlet property="activityIndicator" destination="AQR-Rj-XwT" id="b8J-GR-kfS"/>
+                        <outlet property="webView" destination="2Oy-NU-Ibt" id="0Da-2y-mCl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M8V-ay-Xse" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
