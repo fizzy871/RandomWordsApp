@@ -29,23 +29,25 @@
             [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
         });
     };
+    NSString *placeholderString = @"<p align=\"center\" style=\"margin: 0px; font-size: 14px; font-family: 'Helvetica Neue Light';\">&nbsp;</p>\
+    <p align=\"center\" style=\"margin: 0px; font-size: 14px; font-family: 'Helvetica Neue Light';\">&nbsp;</p>\
+    <p align=\"center\" style=\"margin: 0px; font-size: 14px; font-family: 'Helvetica Neue Light';\">&nbsp;</p>\
+    <p align=\"center\" style=\"margin: 0px; font-size: 14px; font-family: 'Helvetica Neue Light';\"><font size=\"4\">Random Words</font></p>\
+    <p align=\"center\" style=\"margin: 0px; font-size: 14px; font-family: 'Helvetica Neue UltraLight';\"><font size=\"4\">by Saechnikov Alexey</font></p>\
+    <p align=\"center\" style=\"margin: 0px; font-size: 14px; font-family: 'Helvetica Neue UltraLight';\"><font size=\"4\">march, 2015</font></p>\
+    ";
     [self.activityIndicator startAnimating];
     [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
         NSDictionary *dictionary = [NSDictionary dictionaryWithContentsOfURL:[NSURL URLWithString:@"http://saechnikov.com/iosProgsData.plist"]];
         if (!dictionary){
+            [self.webView loadHTMLString:placeholderString baseURL:nil];
             complite();
             return;
         }
         NSString *htmlString = dictionary[@"randomWordsInfoRu"];
         if (!htmlString){
-            [self.webView loadHTMLString:@"<p align=\"center\" style=\"margin: 0px; font-size: 14px; font-family: 'Helvetica Neue Light';\">&nbsp;</p>\
-             <p align=\"center\" style=\"margin: 0px; font-size: 14px; font-family: 'Helvetica Neue Light';\">&nbsp;</p>\
-             <p align=\"center\" style=\"margin: 0px; font-size: 14px; font-family: 'Helvetica Neue Light';\">&nbsp;</p>\
-             <p align=\"center\" style=\"margin: 0px; font-size: 14px; font-family: 'Helvetica Neue Light';\"><font size=\"4\">Random Words</font></p>\
-             <p align=\"center\" style=\"margin: 0px; font-size: 14px; font-family: 'Helvetica Neue UltraLight';\"><font size=\"4\">by Saechnikov Alexey</font></p>\
-             <p align=\"center\" style=\"margin: 0px; font-size: 14px; font-family: 'Helvetica Neue UltraLight';\"><font size=\"4\">march, 2015</font></p>\
-             " baseURL:nil];
+            [self.webView loadHTMLString:placeholderString baseURL:nil];
             complite();
         }
         else{
