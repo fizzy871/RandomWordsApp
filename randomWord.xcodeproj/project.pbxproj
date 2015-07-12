@@ -75,10 +75,49 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		6DFBE6731AA7B10E00C85A65 = {
+		6D4038771B52C47B004B817F /* views */ = {
+			isa = PBXGroup;
+			children = (
+				6DFBE6AB1AA7BCED00C85A65 /* WordTableViewCell.h */,
+				6DFBE6AC1AA7BCED00C85A65 /* WordTableViewCell.m */,
+			);
+			name = views;
+			sourceTree = "<group>";
+		};
+		6D4038781B52C484004B817F /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6DFBE6AE1AA7C0C800C85A65 /* AllWordsViewController.h */,
+				6DFBE6AF1AA7C0C800C85A65 /* AllWordsViewController.m */,
+				6DFBE6B11AA7D3A900C85A65 /* RandomWordsViewController.h */,
+				6DFBE6B21AA7D3A900C85A65 /* RandomWordsViewController.m */,
+				6D8C2FCD1AAA635100A87EED /* AboutViewController.h */,
+				6D8C2FCE1AAA635100A87EED /* AboutViewController.m */,
+			);
+			name = controllers;
+			sourceTree = "<group>";
+		};
+		6D4038791B52C48D004B817F /* model */ = {
+			isa = PBXGroup;
+			children = (
+				6DFBE6A81AA7B13500C85A65 /* wordsManager.h */,
+				6DFBE6A91AA7B13500C85A65 /* wordsManager.m */,
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
+		6D40387A1B52C4A8004B817F /* frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				6D8C2FD01AAA639B00A87EED /* MessageUI.framework */,
+			);
+			name = frameworks;
+			sourceTree = "<group>";
+		};
+		6DFBE6731AA7B10E00C85A65 = {
+			isa = PBXGroup;
+			children = (
+				6D40387A1B52C4A8004B817F /* frameworks */,
 				6DFBE67E1AA7B10E00C85A65 /* randomWord */,
 				6DFBE69B1AA7B10F00C85A65 /* randomWordTests */,
 				6DFBE67D1AA7B10E00C85A65 /* Products */,
@@ -97,22 +136,15 @@
 		6DFBE67E1AA7B10E00C85A65 /* randomWord */ = {
 			isa = PBXGroup;
 			children = (
+				6D4038791B52C48D004B817F /* model */,
+				6D4038781B52C484004B817F /* controllers */,
+				6D4038771B52C47B004B817F /* views */,
 				6DFBE6831AA7B10E00C85A65 /* AppDelegate.h */,
 				6DFBE6841AA7B10E00C85A65 /* AppDelegate.m */,
 				6DFBE68C1AA7B10E00C85A65 /* Main.storyboard */,
 				6DFBE68F1AA7B10E00C85A65 /* Images.xcassets */,
 				6DFBE6911AA7B10E00C85A65 /* LaunchScreen.xib */,
 				6DFBE67F1AA7B10E00C85A65 /* Supporting Files */,
-				6DFBE6A81AA7B13500C85A65 /* wordsManager.h */,
-				6DFBE6A91AA7B13500C85A65 /* wordsManager.m */,
-				6DFBE6AB1AA7BCED00C85A65 /* WordTableViewCell.h */,
-				6DFBE6AC1AA7BCED00C85A65 /* WordTableViewCell.m */,
-				6DFBE6AE1AA7C0C800C85A65 /* AllWordsViewController.h */,
-				6DFBE6AF1AA7C0C800C85A65 /* AllWordsViewController.m */,
-				6DFBE6B11AA7D3A900C85A65 /* RandomWordsViewController.h */,
-				6DFBE6B21AA7D3A900C85A65 /* RandomWordsViewController.m */,
-				6D8C2FCD1AAA635100A87EED /* AboutViewController.h */,
-				6D8C2FCE1AAA635100A87EED /* AboutViewController.m */,
 			);
 			path = randomWord;
 			sourceTree = "<group>";
@@ -380,6 +412,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -393,6 +426,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
