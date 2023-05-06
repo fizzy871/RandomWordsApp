@@ -22,13 +22,6 @@
 @implementation AboutViewController
 
 -(void)viewDidAppear:(BOOL)animated{
-    __weak __typeof(self) weakSelf = self;
-    __block void (^complite)() = ^(){
-        dispatch_sync(dispatch_get_main_queue(), ^{
-            [weakSelf.activityIndicator stopAnimating];
-            [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
-        });
-    };
     NSString *placeholderString = @"<p align=\"center\" style=\"margin: 0px; font-size: 14px; font-family: 'Helvetica Neue Light';\">&nbsp;</p>\
     <p align=\"center\" style=\"margin: 0px; font-size: 14px; font-family: 'Helvetica Neue Light';\">&nbsp;</p>\
     <p align=\"center\" style=\"margin: 0px; font-size: 14px; font-family: 'Helvetica Neue Light';\">&nbsp;</p>\
@@ -36,25 +29,7 @@
     <p align=\"center\" style=\"margin: 0px; font-size: 14px; font-family: 'Helvetica Neue UltraLight';\"><font size=\"4\">by Saechnikov Alexey</font></p>\
     <p align=\"center\" style=\"margin: 0px; font-size: 14px; font-family: 'Helvetica Neue UltraLight';\"><font size=\"4\">march, 2015</font></p>\
     ";
-    [self.activityIndicator startAnimating];
-    [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
-    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-        NSDictionary *dictionary = [NSDictionary dictionaryWithContentsOfURL:[NSURL URLWithString:@"http://saechnikov.com/iosProgsData.plist"]];
-        if (!dictionary){
-            [self.webView loadHTMLString:placeholderString baseURL:nil];
-            complite();
-            return;
-        }
-        NSString *htmlString = dictionary[@"randomWordsInfoRu"];
-        if (!htmlString){
-            [self.webView loadHTMLString:placeholderString baseURL:nil];
-            complite();
-        }
-        else{
-            [self.webView loadHTMLString:htmlString baseURL:[NSURL URLWithString:@"http://saechnikov.com"]];
-            complite();
-        }
-    });
+    [self.webView loadHTMLString:placeholderString baseURL:nil];
 }
 
 -(IBAction)sendFeedBack:(id)sender{
@@ -63,7 +38,7 @@
         mcController.navigationBar.tintColor = RGB(235., 106., 106.);
         mcController.mailComposeDelegate = self;
         [mcController setSubject:@"RandomWords feedback"];
-        [mcController setToRecipients:@[@"a.saechnikov@vironit.com"]];
+        [mcController setToRecipients:@[@"fizzy871@gmail.com"]];
         [self presentViewController:mcController animated:YES completion:nil];
     }
 }

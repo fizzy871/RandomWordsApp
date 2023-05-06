@@ -11,6 +11,7 @@
 @implementation WordTableViewCell
 
 -(void)prepareForReuse{
+    [super prepareForReuse];
     self.wordLabel.text = nil;
 }
 

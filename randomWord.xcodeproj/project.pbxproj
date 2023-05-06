@@ -19,6 +19,7 @@
 		6DFBE6AD1AA7BCED00C85A65 /* WordTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DFBE6AC1AA7BCED00C85A65 /* WordTableViewCell.m */; };
 		6DFBE6B01AA7C0C800C85A65 /* AllWordsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DFBE6AF1AA7C0C800C85A65 /* AllWordsViewController.m */; };
 		6DFBE6B31AA7D3A900C85A65 /* RandomWordsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DFBE6B21AA7D3A900C85A65 /* RandomWordsViewController.m */; };
+		F2A07C3F2A05CAD300775304 /* NavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2A07C3E2A05CAD300775304 /* NavigationController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,8 @@
 		6DFBE6AF1AA7C0C800C85A65 /* AllWordsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AllWordsViewController.m; sourceTree = "<group>"; };
 		6DFBE6B11AA7D3A900C85A65 /* RandomWordsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RandomWordsViewController.h; sourceTree = "<group>"; };
 		6DFBE6B21AA7D3A900C85A65 /* RandomWordsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RandomWordsViewController.m; sourceTree = "<group>"; };
+		F2A07C3D2A05CAD300775304 /* NavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NavigationController.h; sourceTree = "<group>"; };
+		F2A07C3E2A05CAD300775304 /* NavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NavigationController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +96,8 @@
 				6DFBE6B21AA7D3A900C85A65 /* RandomWordsViewController.m */,
 				6D8C2FCD1AAA635100A87EED /* AboutViewController.h */,
 				6D8C2FCE1AAA635100A87EED /* AboutViewController.m */,
+				F2A07C3D2A05CAD300775304 /* NavigationController.h */,
+				F2A07C3E2A05CAD300775304 /* NavigationController.m */,
 			);
 			name = controllers;
 			sourceTree = "<group>";
@@ -224,7 +229,7 @@
 				TargetAttributes = {
 					6DFBE67B1AA7B10E00C85A65 = {
 						CreatedOnToolsVersion = 6.1.1;
-						DevelopmentTeam = 26K5BMR3ML;
+						DevelopmentTeam = JEXCSQ8266;
 					};
 					6DFBE6971AA7B10F00C85A65 = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -237,6 +242,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -281,6 +287,7 @@
 				6DFBE6B01AA7C0C800C85A65 /* AllWordsViewController.m in Sources */,
 				6D8C2FCF1AAA635100A87EED /* AboutViewController.m in Sources */,
 				6DFBE6B31AA7D3A900C85A65 /* RandomWordsViewController.m in Sources */,
+				F2A07C3F2A05CAD300775304 /* NavigationController.m in Sources */,
 				6DFBE6851AA7B10E00C85A65 /* AppDelegate.m in Sources */,
 				6DFBE6821AA7B10E00C85A65 /* main.m in Sources */,
 			);
@@ -408,9 +415,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = JEXCSQ8266;
 				INFOPLIST_FILE = randomWord/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.saechnikov.randomWords;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -422,9 +431,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = JEXCSQ8266;
 				INFOPLIST_FILE = randomWord/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.saechnikov.randomWords;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

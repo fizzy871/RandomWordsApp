@@ -26,9 +26,12 @@
 }
 -(void)viewWillAppear:(BOOL)animated{
     [self updateConsts];
-    
-    UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"back"] style:UIBarButtonItemStylePlain target:nil action:nil];
-    self.navigationItem.backBarButtonItem = backButton;
+
+    if (@available(iOS 13.0, *)) {}
+    else {
+        UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"back"] style:UIBarButtonItemStylePlain target:nil action:nil];
+        self.navigationItem.backBarButtonItem = backButton;
+    }
 }
 #pragma mark - getters/setters
 -(NSMutableArray *)words{

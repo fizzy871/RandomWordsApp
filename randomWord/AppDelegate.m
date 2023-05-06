@@ -16,7 +16,12 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+//    [[UINavigationBar appearance] setTranslucent: NO];
+//    [[UINavigationBar appearance] setBarTintColor: UIColor.blueColor];
+//    [[UINavigationBar appearance] setBackgroundColor: UIColor.blueColor];
+//    if (@available(iOS 13.0, *)) {
+//        [[UINavigationBar appearance] setScrollEdgeAppearance: [UINavigationBar appearance].standardAppearance];
+//    }
     return YES;
 }
 
